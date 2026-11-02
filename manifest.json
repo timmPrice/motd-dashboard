@@ -1,0 +1,9 @@
+{
+	"id": "motd",
+	"name": "MOTD",
+	"version": "0.1.0",
+	"minAppVersion": "1.5.0",
+	"description": "A pinned, Neovim-style start dashboard with ASCII art and single-key actions.",
+	"author": "timmPrice",
+	"isDesktopOnly": false
+}
