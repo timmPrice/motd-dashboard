@@ -5,6 +5,8 @@ single-key actions, and a plugin-count footer. It lives in a pinned tab at
 the front of the main tab group, so opening files moves you to new tabs and
 the dashboard stays put.
 
+![example](./images/example_setup.png)
+
 | Key | Action |
 |-----|--------|
 | `f` | Find file (Omnisearch if enabled, otherwise Quick Switcher) |
