@@ -1,0 +1,20 @@
+{
+	"name": "motd",
+	"version": "0.1.0",
+	"description": "A pinned, Neovim-style start dashboard for Obsidian.",
+	"main": "main.js",
+	"private": true,
+	"scripts": {
+		"dev": "node esbuild.config.mjs --watch",
+		"build": "tsc --noEmit && node esbuild.config.mjs",
+		"deploy": "npm run build && sh scripts/deploy.sh"
+	},
+	"license": "MIT",
+	"devDependencies": {
+		"@types/node": "^26.6.6",
+		"builtin-modules": "^3.3.0",
+		"esbuild": "^0.28.2",
+		"obsidian": "^1.14.4",
+		"typescript": "^7.0.2"
+	}
+}

@@ -1,0 +1,99 @@
+.motd-view {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	outline: none;
+}
+
+.motd-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 2rem;
+	width: 100%;
+	max-width: 44rem;
+	padding: 2rem 1rem;
+	margin: auto;
+}
+
+/* The art block is centered as a whole; text inside stays left-aligned so every line keeps its column. */
+.motd-art-wrap {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	overflow: hidden;
+}
+
+.motd-art {
+	margin: 0;
+	padding: 0;
+	background: none;
+	border: none;
+	text-align: left;
+	white-space: pre;
+	font-family: var(--font-monospace);
+	font-size: var(--font-ui-small);
+	line-height: 1.15;
+	letter-spacing: 0;
+	font-variant-ligatures: none;
+	color: var(--text-accent);
+}
+
+.motd-menu {
+	display: flex;
+	flex-direction: column;
+	gap: 0.25rem;
+	width: 100%;
+	max-width: 32rem;
+	font-family: var(--font-monospace);
+}
+
+.motd-row {
+	display: flex;
+	align-items: center;
+	gap: 0.75rem;
+	padding: 0.5rem 0.75rem;
+	border-radius: var(--radius-s);
+	cursor: pointer;
+	color: var(--text-normal);
+}
+
+.motd-row:hover {
+	background: var(--background-modifier-hover);
+}
+
+.motd-row-icon {
+	display: flex;
+	color: var(--text-accent);
+}
+
+.motd-row-label {
+	flex: 1;
+	min-width: 0;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.motd-row-hint {
+	margin-left: 0.75rem;
+	color: var(--text-faint);
+}
+
+.motd-row-key {
+	color: var(--text-muted);
+}
+
+.motd-footer {
+	font-family: var(--font-monospace);
+	font-size: var(--font-ui-smaller);
+	color: var(--text-faint);
+}
+
+.motd-settings-art {
+	width: 100%;
+	min-height: 18rem;
+	font-family: var(--font-monospace);
+	white-space: pre;
+	overflow: auto;
+}
